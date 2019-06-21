@@ -1,11 +1,7 @@
 {
   "pages": [
     "pages/index",
-    "pages/counter",
-    {
-      "path": "logs/index",
-      "subPackage": true
-    }
+    "pages/counter"
   ],
   "window": {
     "backgroundTextStyle": "light",
