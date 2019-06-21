@@ -19,16 +19,11 @@
       <input type="text" class="form-control" v-model.lazy="motto" placeholder="v-model.lazy" />
     </form>
 
-    <a href="/pages/counter/main" class="counter">去往Vuex示例页面</a>
+    <a href="/pages/counter" class="counter">去往Vuex示例页面</a>
     <a @click="goCounter" class="counter">去往Vuex示例页面 router</a>
-    <a href="../packageA/index/main"> 分包A </a>
-    <a href="../packageB/index/main"> 分包B </a>
 
     <p>
-      <van-button type="primary" @click="goPackageA">分包A 路由跳转</van-button>
-    </p>
-    <p>
-      <van-button type="warning" @click="goPackageB">分包B 路由跳转</van-button>
+      <van-button type="primary" @click="goPackageA"></van-button>
     </p>
 
   </div>
@@ -69,9 +64,6 @@ export default {
         // 用户按了拒绝按钮
         console.log('用户按了拒绝按钮')
       }
-      // console.log(e.detail.errMsg)
-      // console.log(e.detail.userInfo)
-      // console.log(e.detail.rawData)
     },
     getUserInfo () {
       wx.getSetting({
@@ -109,17 +101,9 @@ export default {
       console.log('clickHandle:', ev)
       // throw {message: 'custom test'}
     },
-    goPackageA () {
-      console.log('goPackageA')
-      this.$router.push({ path: '/pages/packageA/index/main' })
-    },
-    goPackageB () {
-      console.log('goPackageA')
-      this.$router.push({ path: '/pages/packageB/index/main' })
-    },
     goCounter () {
       console.log('goCounter')
-      this.$router.push({ path: '/pages/counter/main' })
+      this.$router.push({ path: '/pages/counter' })
     }
   },
   created () {
