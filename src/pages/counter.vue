@@ -30,6 +30,12 @@ export default {
       'increment',
       'decrement'
     ])
+  },
+  // mounted (options) {
+  //   console.log(options.id)
+  // }
+  onLoad (options) {
+    console.log(options.id)
   }
 }
 </script>

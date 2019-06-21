@@ -103,7 +103,7 @@ export default {
     },
     goCounter () {
       console.log('goCounter')
-      this.$router.push({ path: '/pages/counter' })
+      this.$router.push({ path: '/pages/counter?id=123' })
     }
   },
   created () {
