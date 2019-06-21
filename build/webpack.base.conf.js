@@ -7,11 +7,11 @@ const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
 
-function resolve (dir) {
+function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
 
-const entry = MpvueEntry.getEntry('./src/app.json')
+const entry = MpvueEntry.getEntry('./src/router/index.js')
 
 module.exports = {
   entry,
